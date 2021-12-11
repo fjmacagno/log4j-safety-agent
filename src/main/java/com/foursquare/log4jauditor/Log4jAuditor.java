@@ -53,7 +53,7 @@ public final class Log4jAuditor implements ClassFileTransformer {
             if (!ignoreVersions && isLog4JVersionSafe(protectionDomain.getCodeSource())) {
                 System.out.println("Log4J version looks safe, permitting its existence");
             } else {
-                System.out.println("The JVM attempted to load a JNDI Class, and the version doesn't look safe! Killing JVM for safety. Class name: " + className);
+                System.out.println("The JVM attempted to load a JNDI Class, and the version doesn't look safe! Killing JVM for safety.");
                 if (!aggressive) {
                     try {
                         return emptyClassBytes();
