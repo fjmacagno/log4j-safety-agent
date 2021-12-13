@@ -17,10 +17,11 @@ Arguments can be passed via
 -javaagent:./target/log4j-safety-agent-1.0-SNAPSHOT.jar=<arg>=<value>,<arg2>=<value2>,...
 ```
 
-Optional Arguments:
-`aggressive`: Always use `Runtime.halt()` instead of just emptying the JNDI class. Values: `true` or `false`
-`ignoreVersions`: Don't check log4j version against list of safe versions. Values: `true` or `false`
+Optional Arguments:\
+`aggressive`: Always use `Runtime.halt()` instead of just emptying the JNDI class. Values: `true` or `false`\
+`ignoreVersions`: Don't check log4j version against list of safe versions. Values: `true` or `false`\
 
+Example: `-javaagent:log4j-safety-agent-1.0-SNAPSHOT.jar=aggressive=true,ignoreVersions=true`
 
 
 ### Example
