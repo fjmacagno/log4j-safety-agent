@@ -11,7 +11,7 @@ import java.util.List;
 
 public final class Log4jAuditor implements ClassFileTransformer {
 
-    private static final List<String> SAFE_LOG4J_VERSIONS = Arrays.asList(".*log4j-core-2\\.15\\.0-rc2.*");
+    private static final List<String> SAFE_LOG4J_VERSIONS = Arrays.asList(".*log4j-core-2\\.16.*", ".*log4j-core-2\\.17.*");
     private boolean aggressive;
     private boolean ignoreVersions;
 
